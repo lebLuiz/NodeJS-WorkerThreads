@@ -4,7 +4,7 @@
 // 🧩 NOTE-END: Travar o NODEJS
 
 // 🎯 NOTE: A ideia é executar esse loop acima, sem travar o NodeJS, ou seja, o EVENT-LOOP
-// UV_THREADPOOL_SIZE=10 node index.mjs
+// Definir quantidade de threads a serem utilizadas por default: UV_THREADPOOL_SIZE=10 node index.mjs
 
 import { execSync } from 'node:child_process';
 import { Worker } from 'node:worker_threads';

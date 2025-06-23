@@ -11,5 +11,6 @@ parentPort.once('message', ({ from, to}) => {
     for (let i = from; i < to; i++) { count++; }
 
     console.timeEnd(`benchamark-${threadId}`);
+    // Paradigma de passagem de mensagens
     parentPort.postMessage(`Terminei a Thread ${threadId}! Com ${count} items`);
 })
